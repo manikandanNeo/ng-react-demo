@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -17,6 +17,18 @@ function App() {
         >
           Learn React
         </a>
+        <select
+          onChange={(event) => {
+            console.log("onchange happens" + event.target.value);
+          }}
+        >
+          <option value="grapefruit">Grapefruit</option>
+          <option value="lime">Lime</option>
+          <option selected value="coconut">
+            Coconut
+          </option>
+          <option value="mango">Mango</option>
+        </select>
       </header>
     </div>
   );
